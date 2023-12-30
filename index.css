@@ -349,10 +349,10 @@ nav .lol{
   }
   .header-text h1{
     font-size: 30px;
-    color:#c5fc01
+
 }
 .header-text h1 span{
-  color:rgb(255, 255, 255);
+  color:#ff004f;
 }
 nav .lol{
   display: block;
