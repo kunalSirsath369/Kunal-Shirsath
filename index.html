@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <script src="https://kit.fontawesome.com/169c078c09.js" crossorigin="anonymous"></script>
+  <title>Profile</title>
+</head>
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="./content/Kunal.png" alt="" class="logo">
+      <ul id="sidemenu">
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Servise</a></li>
+      <li><a href="#porfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <i class="fa-solid fa-xmark lol" onclick="closemenu()"></i>
+    </ul>
+    
+    <i class="fa-solid fa-bars lol" onclick="openmenu()"></i></nav>
+    <div class="header-text">
+      <p>MERN Developer</p>
+      <h1>Hi, I'm <span>Kunal</span> <br>RS From India</h1>
+
+    </div>
+  </div>
+</div>
+<!-- about section -->
+<div id="about">
+  <div class="container"><div class="row">
+    <div class="about-col-1"><img src="./content/item1.png" ></div>
+    <div class="about-col-1"><h1 class="sub-title">About Me</h1>
+    <p>Highly skilled and motivated Full Stack Engineer with over 2 years of experience in frontend development. Proficient in JavaScript, React, PHP, HTML, and CSS, with a strong focus on building efficient and scalable web applications. Demonstrated expertise in leveraging modern libraries and frameworks such as React, to create dynamic and interactive user interfaces. Proven track record of leading cross-functional teams, managing projects, and delivering innovative solutions that optimize performance and user experience.</p>
+  <div class="tab-title">
+    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+    <p class="tab-links" onclick="opentab('education')">Education</p>
+  </div>
+<div class="tab-contents active-tab" id="skills">
+  <ul>
+    <li><span>MERN</span><br>Web app Development</li>
+    <li><span>UI/UX</span><br>Designing  Web/App interfaces</li>
+    <li><span>JavaScript</span><br>JavaScript Developer</li>
+  </ul>
+</div>
+<div class="tab-contents" id="education">
+  <ul>
+    <li><span>BTeck Computer Engineering</span><br>NMKC college<br>2022-25</li>
+    <li><span>Computer Engineering</span><br>Goverment Polytechnic Ambad</li>
+    <li><span>10th</span><br>LVM school</li>
+  </ul>
+</div>
+</div>
+  </div></div>
+</div>
+
+<!-- services -->
+<div id="services"><div class="container"><h1 class="sub-titile">My Services</h1>
+  <div class="services-lists">
+<div class="services-list">
+  <div><i class="fa-brands fa-app-store"></i>
+    <h1>Web Design</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, dolorum aperiam. Earum aspernatur similique quisquam amet rem dignissimos odio. Aperiam unde accusantium praesentium velit !</p>
+<a href="#">Learn More</a></div>
+</div>
+<div class="services-list">
+  <div><i class="fa-brands fa-app-store"></i>
+    <h1>App Design</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, dolorum aperiam. Earum aspernatur similique quisquam amet rem dignissimos odio. Aperiam unde accusantium praesentium velit !</p>
+<a href="#">Learn More</a></div>
+</div>
+<div class="services-list">
+  <div><i class="fa-brands fa-app-store"></i>
+    <h1>App Design</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, dolorum aperiam. Earum aspernatur similique quisquam amet rem dignissimos odio. Aperiam unde accusantium praesentium velit !</p>
+<a href="#">Learn More</a></div>
+</div>
+</div>
+</div></div>
+<!-- portfollo -->
+<div id="porfolio">
+<div class="container">
+<h1 class="sub-titile">My Work</h1>
+<div class="work-list"><div class="work"><img src="./content/Spotifyclone.jpg" alt="">
+<div class="layer"><h3>Spotify Clone</h3><p>Lorem ipsum dolor sit amet consectetur.</p><a href="#"><i class="fa-solid fa-link"></i></a></div></div>
+<div class="work"><img src="./content/myntraClone.jpg" alt="">
+  <div class="layer"><h3>Myntra Clone</h3><p>Lorem ipsum dolor sit amet consectetur .</p><a href="#"><i class="fa-solid fa-link"></i></a></div></div>
+</div>
+<a href="#" class="btn">See More</a>
+</div></div>
+<!-- contact -->
+<div id="contact"><div class="container">
+  <div class="row"><div class="contact-left"><h1 class="'sub-titile">Contact Me</h1>
+  <p><i class="fa-solid fa-paper-plane"></i>shirsathkunal11@gmail.com</p>
+<p><i class="fa-solid fa-phone"></i>7588072877 / 7378407829</p>
+
+<div class="social-icon">
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://www.linkedin.com/in/kunal-shirsath-369om"><i class="fa-brands fa-linkedin"></i></a>
+<a href="#"><i class="fa-brands fa-twitter"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a></div><a href="./content/KunalS.pdf.pdf"  download class="btn btn2">Download Resume</a>
+</div>
+<div class="contact-right"><form name="submit-to-google-sheet">
+  <input type="text" name="Name" placeholder="Your Name" required>
+  <input type="email" name="Email" placeholder="Your Email" required>
+<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+<button type="submit" class="btn btn2">Submit</button>
+</textarea>
+</form>
+<span id="msg"></span>
+</div>
+</div>
+</div>
+<div class="copyright">
+  <p>© Kunal, All rights reserved <i class="fa-solid fa-star"></i></i></p></div>
+</div>
+  <script>
+  var tablinks= document.getElementsByClassName('tab-links')
+  var tabcontents= document.getElementsByClassName('tab-contents')
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link")
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+  </script>
+  <script>
+var sidemeu=document.getElementById('sidemenu');
+function openmenu(){
+  sidemeu.style.right="0";
+
+}
+function closemenu(){
+  sidemeu.style.right="-200px";
+}
+
+  </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx59xXINpVsS5d6XK5yxY0VSkV3JA5DDvNtuOvQ3unc6xQ85igdQJTZ2svZ86oArOU/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg =document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML='Message sent succesfully'
+        setTimeout(function(){
+          msg.innerHTML=''
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>  
+</body>
+</html>
